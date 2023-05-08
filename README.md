@@ -19,13 +19,12 @@ The blockchain data indexer service fetches blockchain data using the web3 API t
 
 ### Setting Up
 1. Clone the repository:
-```tsm
-bash
+```
 git clone https://github.com/llc564978/go-eth-project.git
 ```
 
 2. Change to the project directory:
-```tsm
+```
 cd go-eth-project
 ```
 
