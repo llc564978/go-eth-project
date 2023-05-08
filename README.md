@@ -4,9 +4,9 @@ This project is an Ethereum blockchain service implemented in Golang, consisting
 ## API Service
 The API service provides the following endpoints:
 
-* [GET] /blocks?limit=n: Returns the latest n blocks (without all transaction hashes)
-* [GET] /blocks/:id: Returns a single block by block id (including all transaction hashes)
-* [GET] /transaction/:txHash: Returns transaction data with event logs
+* [GET] /blocks?limit=n Returns the latest n blocks (without all transaction hashes)
+* [GET] /blocks/:id Returns a single block by block id (including all transaction hashes)
+* [GET] /transaction/:txHash Returns transaction data with event logs
 
 ## Blockchain Data Indexer Service
 The blockchain data indexer service fetches blockchain data using the web3 API through RPC and stores the data in a PostgreSQL database. It scans the blockchain data in parallel, starting from block n, and continues scanning until the latest block is reached. It continuously scans new and old blocks on the chain.
