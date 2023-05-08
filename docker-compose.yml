@@ -23,6 +23,9 @@ services:
       DB_USER: postgres
       DB_PASSWORD: yourpassword
       DB_NAME: blockchain_db
+    ports:
+      - "8080:8080"
+    entrypoint: go run main.go
 
 volumes:
   db-data:
