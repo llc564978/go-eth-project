@@ -14,26 +14,24 @@ The blockchain data indexer service fetches blockchain data using the web3 API t
 ## Getting Started
 ### Prerequisites
 
-* Golang 1.17 or later
-* PostgreSQL 13 or later
+* Golang
+* PostgreSQL
 
 ### Setting Up
 1. Clone the repository:
 ```tsm
 bash
-git clone https://github.com/llc564978/ethereum-blockchain-service.git
+git clone https://github.com/llc564978/go-eth-project.git
 ```
 
 2. Change to the project directory:
 ```tsm
-bash
-cd ethereum-blockchain-service
+cd go-eth-project
 ```
 
 3. Install dependencies:
 
-```tsm
-go
+```
 go mod download
 ```
 
@@ -44,22 +42,19 @@ go mod download
 ## Running the Application
 ### Build the project:
 
-```tsm
-go
+```
 go build -o main
 ```
 
 ### Run the application:
 
-```tsm
-bash
-./main
+```
+go run .
 ```
 
 ### Run the Docker-compose:
 
-```tsm
-bash
+```
 docker-compose up
 ```
 
