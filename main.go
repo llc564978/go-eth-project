@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"os"
 
 	"github.com/gin-gonic/gin"
 	"github.com/llc564978/ethereum-blockchain-service/handlers"
@@ -15,7 +16,7 @@ func main() {
 	router.GET("/blocks/:id", handlers.GetBlockByIDHandler)
 	router.GET("/transaction/:txHash", handlers.GetTransactionByHashHandler)
 
-	rpcEndpoint := "https://data-seed-prebsc-2-s3.binance.org:8545/"
+	rpcEndpoint := os.Getenv("RPC_ENDPOINT")
 	startBlock := uint64(29471119)
 
 	ctx := context.Background()

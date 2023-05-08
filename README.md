@@ -34,9 +34,7 @@ cd go-eth-project
 go mod download
 ```
 
-4. Set up the PostgreSQL database and update the database connection parameters in the models/db.go file.
-
-5. Replace the rpcURL variable in the services/indexer.go file with your Ethereum RPC URL.
+4. Replace the RPC_ENDPOINT variable in the docker-compose.yml file with your Ethereum RPC URL.
 
 ## Running the Application
 ### Build the project:

@@ -23,6 +23,7 @@ services:
       DB_USER: postgres
       DB_PASSWORD: yourpassword
       DB_NAME: blockchain_db
+      RPC_ENDPOINT: https://data-seed-prebsc-2-s3.binance.org:8545/
     ports:
       - "8080:8080"
     entrypoint: go run main.go
